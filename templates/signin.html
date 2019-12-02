@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+<style>
+    .error {color: red; }
+</style>
+<h1>Sign Up</h1>
+<form action='usersignin' method='POST'>
+    <label>Username
+        <input name="username" type="text" value='{{username}}' />
+    </label>
+    <p class="error">{{usernameerror}}</p>
+    <label>Password
+        <input name="password" type="password" />
+    </label>
+    <p class='error'>{{passworderror}}</p>
+    <label>Verify Password
+        <input name='verifypassword' type="password" />
+    </label>
+    <p class='error'>{{verifypassworderror}}</p>
+    <label>Email (Optional)
+        <input name='email' type = 'text' value='{{email}}' />
+    </label>
+    <p class='error'>{{emailerror}}</p>
+    <input type='submit' value='submit' />
+</form>
+
+
+
+
+
+
